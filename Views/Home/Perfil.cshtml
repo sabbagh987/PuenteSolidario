@@ -1,0 +1,29 @@
+@model PROGxefsi.Models.UserProfileViewModel
+@{
+    ViewData["Title"] = "Perfil";
+}
+
+<div class="container my-4">
+    <h1 class="mb-3">Perfil de usuario</h1>
+    <p class="text-muted">Detalles del usuario y acciones relacionadas.</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>@Model.Name</h5>
+                    <p class="small text-muted">@Model.Email</p>
+                </div>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Mis donaciones (@Model.DonationsCount)</a>
+                <a href="#" class="list-group-item list-group-item-action">Editar perfil</a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="h5">Actividad reciente</h2>
+            <p>Lista de acciones y donaciones.</p>
+            <img src="~/Perfil.png" class="img-fluid border" alt="Perfil" />
+        </div>
+    </div>
+</div>

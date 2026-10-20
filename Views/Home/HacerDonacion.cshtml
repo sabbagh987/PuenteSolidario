@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Hacer Donación";
+}
+
+<div class="container my-4">
+    <h1 class="mb-3">Hacer donación</h1>
+    <p class="text-muted">Formulario simplificado para donar a una causa u organización.</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Monto</label>
+                    <input class="form-control" placeholder="$" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Método de pago</label>
+                    <select class="form-select"><option>Tarjeta</option></select>
+                </div>
+                <button class="btn btn-primary">Donar</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="~/Hacer donacion.png" class="img-fluid border" alt="Hacer donación" />
+        </div>
+    </div>
+</div>
